@@ -42,6 +42,8 @@ Adds one or more command hooks. All commands must be unique and are case insensi
 
 #### `message(msg)`
 Sends a message in the `[Proxy]` channel.
+#### `alert(msg)`
+Sends a message in the center of the screen.
 
 #### `exec(str)`
 Executes a raw command string. If `str` is an array then it will be interpreted as arguments instead.
