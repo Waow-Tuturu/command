@@ -121,6 +121,15 @@ class Command {
 			message: msg
 		})
 	}
+	
+	alert(msg) {
+       		this.dispatch.toClient('S_DUNGEON_EVENT_MESSAGE', 1, {
+			unk1: 2,
+			unk2: 0,
+			unk3: 0,
+			message: msg
+        })
+    }
 }
 
 function stripOuterHTML(str) {
